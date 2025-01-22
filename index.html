@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="ECRAP">
-  <meta property="og:title" content="ECRAP"/>
-  <meta property="og:description" content="Project page for Exophora Resolution and Classifying User Commands."/>
+  <meta name="description" content="MuCCAT">
+  <meta property="og:title" content="MuCCAT"/>
+  <meta property="og:description" content="Project page for Multimodal Communication and Comprehension Assessment for Task Planning."/>
   <meta property="og:url" content="https://emergentsystemlabstudent.github.io/ECRAP/"/>
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
   <meta property="og:image" content="static/image/your_banner_image.png" />
@@ -14,8 +14,8 @@
   <meta property="og:image:height" content="630"/>
 
 
-  <meta name="twitter:title" content="Project page for Exophora Resolution and Classifying User Commands.">
-  <meta name="twitter:description" content="Project page for Exophora Resolution and Classifying User Commands.">
+  <meta name="twitter:title" content="Project page for Multimodal Communication and Comprehension Assessment for Task Planning.">
+  <meta name="twitter:description" content="Project page for Multimodal Communication and Comprehension Assessment for Task Planning.">
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
   <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
   <meta name="twitter:card" content="summary_large_image">
@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>ECRAP</title>
+  <title>MuCCAT</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -53,27 +53,34 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">ECRAP: Exophora Resolution and Classifying User Commands for Robot Action Planning by Large Language Models</h1>
+          <h1 class="title is-1 publication-title">Integrating Multimodal Communication and Comprehension Evaluation during Human-Robot Collaboration for Increased Reliability of Foundation Model-based Task Planning Systems</h1>
           <div class="is-size-5 publication-authors">
             <!-- Paper authors -->
             <span class="author-block">
-              Akira Oyama<sup>1,*</sup>,</span>
+              Eden Martin<sup>1</sup>,</span>
             <span class="author-block">
-              <a href="https://scholar.google.co.jp/citations?user=KPxSCJUAAAAJ&hl=ja&oi=ao" target="_blank">Shoichi Hasegawa<sup>1</sup>,</span>
+              <a href="https://scholar.google.co.jp/citations?user=KPxSCJUAAAAJ&hl=ja&oi=ao" target="_blank">Shoichi Hasegawa<sup>2</sup>,</span>
             <span class="author-block">
-              <a href="https://scholar.google.co.jp/citations?user=Y4qjYvMAAAAJ&hl=ja&oi=ao" target="_blank">Yoshinobu Hagiwara<sup>1,2</sup>,</a></span>
+              <a href="https://scholar.google.co.jp/citations?user=Y4qjYvMAAAAJ&hl=ja&oi=ao" target="_blank">Jorge Solis<sup>3</sup>,</a></span>
             <span class="author-block">
-              <a href="https://scholar.google.co.jp/citations?user=jtB7J0AAAAAJ&hl=ja&oi=ao" target="_blank">Akira Taniguchi<sup>1</sup>,</a></span>
+              <a href="https://scholar.google.co.jp/citations?user=jtB7J0AAAAAJ&hl=ja&oi=ao" target="_blank">Benoit Macq<sup>1</sup>,</a></span>
             <span class="author-block">
-              <a href="https://scholar.google.co.jp/citations?user=dPOCLQEAAAAJ&hl=ja&oi=ao" target="_blank">Tadahiro Taniguchi<sup>1,3</sup></a></span>
+              <a href="https://scholar.google.co.jp/citations?user=dPOCLQEAAAAJ&hl=ja&oi=ao" target="_blank">Renaud Ronsse<sup>1</sup></a></span>
+            <span class="author-block">
+              <a href="https://scholar.google.co.jp/citations?user=dPOCLQEAAAAJ&hl=ja&oi=ao" target="_blank">Gustavo Alfonso Garcia Ricardez<sup>2</sup></a></span>
+            <span class="author-block">
+              <a href="https://scholar.google.co.jp/citations?user=dPOCLQEAAAAJ&hl=ja&oi=ao" target="_blank">Lotfi El Hafi<sup>2,*</sup></a></span>
+            <span class="author-block">
+              <a href="https://scholar.google.co.jp/citations?user=dPOCLQEAAAAJ&hl=ja&oi=ao" target="_blank">Tadahiro Taniguchi<sup>2,4</sup></a></span>
           </div>
 
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <sup>1</sup>Ritsumeikan University,
-              <sup>2</sup>Soka University,
-              <sup>3</sup>Kyoto University
-              <br><span>Accepted at IEEE IRC 2024.</span>
+              <sup>1</sup>Universitè catholique de Louvain (UCLouvain),
+              <sup>2</sup>Ritsumeikan University,
+              <sup>3</sup>Karlstad University,
+              <sup>4</sup>Kyoto University
+              <br><span>Accepted at IEEE SII 2025.</span>
             </span>
             <span class="eql-cntrb"><small><br><sup>*</sup>Corresponding Author</small></span>
           </div>
@@ -159,15 +166,20 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            The ability to understand a variety of verbal instructions and perform tasks is important for daily life support robots.
-            People's speech to the robot may include greetings and demonstratives, and the robot needs to act appropriately in such cases.
-            In the case of instruction including demonstratives such as "Bring me that cup," exophora resolution (ER) is needed to find the specific object corresponding to "that cup."
-            Recently, action planning based on large language models (LLMs) has been necessary for robots to act and has been rapidly studied.
-            However, in previous action planning research, it was difficult to identify the target object from language instructions including demonstratives, and to perform the planning desired by the user.
-            This study aims to plan actions expected by the user from various user language queries, such as greetings or those containing demonstratives.
-            We propose a method for action planning from a variety of language instructions by combining a task classification module, an ER framework, and LLMs.
-            In the experiment, various queries were given, including queries containing demonstratives and queries that do not require the robot to move but only to respond, and the planning accuracy was compared to a baseline without an exophora resolution framework.
-            The results show that the proposed method is approximately 1.3 times more accurate than the baseline.
+            Foundation models provide the adaptability needed in robotics but often require explicit tasks or human
+            verification due to potential unreliability in their responses, complicating human-robot collaboration (HRC). 
+            To enhance the reliability of such task-planning systems, we propose 1) an adaptive task-planning system for 
+            HRC that reliably performs non-predefined tasks implicitly instructed through HRC, and 2) an integrated system 
+            combining multimodal large language model (LLM)-based task planning with multimodal communication of human intention 
+            to increase the HRC success rate and comfort. The proposed system integrates GPT-4V for adaptive task planning and 
+            comprehension evaluation during HRC with multimodal communication of human intention through speech and deictic gestures. 
+            Four pick-and-place tasks of gradually increasing difficulty were used in three experiments, each evaluating a key aspect 
+            of the proposed system: task planning, comprehension evaluation, and multimodal communication. The quantitative results 
+            show that the proposed system can interpret implicitly instructed tabletop pick-and-place tasks through HRC, providing the 
+            next object to pick and the correct position to place it, achieving a mean success rate of 0.80. Additionally, the system 
+            can evaluate its comprehension of three of the four tasks with an average precision of 0.87. The qualitative results show 
+            that multimodal communication not only significantly enhances the success rate but also the feelings of trust and control, 
+            willingness to use again, and sense of collaboration during HRC.
           </p>
         </div>
       </div>
@@ -364,11 +376,11 @@
     <h2 class="title">BibTeX</h2>
     <!-- <pre><code>BibTex Code Here</code></pre> -->
     <pre><code>
-      @inproceedings{oyama2024ecrap,
-        author={Oyama, Akira  and Hasegawa, Shoichi  and Hagiwara, Yoshinobu  and Taniguchi, Akira  and Taniguchi, Tadahiro},
-        title={ECRAP: Exophora Resolution and Classifying User Commands for Robot Action Planning by Large Language Models},
-        booktitle={IEEE International Conference on Robotic Computing (IRC)},
-        year={2024, accepted}
+      @inproceedings{martin2025muccat,
+        author={Martin, Eden  and Hasegawa, Shoichi  and Solis, Jorge  and Macq, Benoit  and Ronsse, Renaud and Garcia Ricardez, Gustavo Alfonso and El Hafi, Lotfi and Taniguchi, Tadahiro},
+        title={Integrating Multimodal Communication and Comprehension Evaluation during Human-Robot Collaboration for Increased Reliability of Foundation Model-based Task Planning Systems},
+        booktitle={IEEE/SICE International Symposium on System Integrations (SII)},
+        year={2025, accepted}
       }
     </code></pre>
   </div>
@@ -376,10 +388,11 @@
 <!--End BibTex citation -->
 
 <!--Related Research -->
-<section class="section" id="Related Research">
+<section class="section" id="Recent Research">
   <div class="container is-max-desktop content">
     <h2 class="title">Related Research</h2>
     <ul>
+      <li><a href="https://t.co/fUfYedw4QI" target="_blank" rel="noopener noreferrer">GPTAlly</a></li>
       <li><a href="https://emergentsystemlabstudent.github.io/MultiViewRetrieve/" target="_blank" rel="noopener noreferrer">SimView</a></li>
       <li><a href="https://emergentsystemlabstudent.github.io/DomainBridgingNav/" target="_blank" rel="noopener noreferrer">CrossIA</a></li>
       <li><a href="https://tomochika-ishikawa.github.io/Active-SpCoSLAM/" target="_blank" rel="noopener noreferrer">Active SpCoSLAM</a></li>
@@ -408,7 +421,7 @@
     <!-- <h2 class="title">Acknowledgements</h2> -->
     <h2 class="title">Funding</h2>
     <p>
-      This work was supported by JSPS KAKENHI Grants-in-Aid for Scientific Research (Grant Numbers JP23K16975, 22K12212), JST Moonshot Research \& Development Program (Grant Number JPMJMS2011).
+      This work was supported by JST Moonshot Research \& Development Program (Grant Number JPMJMS2011).
     </p>
   </div>
 </section>
