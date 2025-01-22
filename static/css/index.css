@@ -147,5 +147,22 @@ body {
   font-size: smaller;
 }
 
+/* 中央揃えの画像スタイル */
+.image-container {
+  text-align: center; /* 画像を中央揃え */
+}
+
+.center-image {
+  display: inline-block; /* インラインブロックで中央揃え可能に */
+  max-width: 100%; /* コンテナ内に収まるように調整 */
+  height: auto; /* アスペクト比を維持 */
+}
+
+/* 左揃えの文章スタイル */
+.subtitle {
+  text-align: left; /* テキストを左揃え */
+  margin-top: 1em; /* 画像と文章間に余白を追加 */
+  font-family: 'Noto Sans', sans-serif; /* グローバルなフォントを継承 */
+}
 
 
